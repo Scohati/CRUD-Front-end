@@ -1,0 +1,2 @@
+Para rodar o projeto, de um "npm install" no bash. 
+E então pode rodar o "ng serve"
