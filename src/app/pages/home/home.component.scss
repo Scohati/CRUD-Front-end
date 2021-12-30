@@ -1,0 +1,79 @@
+$cor-principal: #7abcc7;
+$cor-secundaria: #fb8c8c;
+$cor-fundo: rgba(0, 0, 0, 0.816);
+
+.header {
+  width: 100vw;
+  height: 70px;
+  background: $cor-fundo;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    color: #fff;
+    font-size: 36px;
+
+    h1 {
+      font-weight: normal;
+      a {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 30px;
+      transition: 0.2s;
+    }
+    a:hover {
+      color: $cor-fundo;
+      transition: 0.2s;
+    }
+  }
+}
+
+.container-principal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: url("../../../assets/img/imagem.jpg") center no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 10rem;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    text-align: center;
+  }
+  .button {
+    button {
+      font-size: 2rem;
+      background: $cor-fundo;
+      color: rgba(255, 255, 255, 0.652);
+      border: none;
+      padding: 30px 60px;
+      border-radius: 20px;
+      transition: 0.3s;
+      margin-top: 30px;
+      letter-spacing: 2px;
+    }
+    button:hover {
+      color: #fff;
+      background: #000;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+}

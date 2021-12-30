@@ -1,0 +1,21 @@
+<header class="header">
+    <nav>
+      <h1><a routerLink="/login">Voltar</a></h1>
+    </nav>
+  </header>
+<div class="container-principal">
+    <div class="container-cadastro">
+        <div class="imagem">
+        </div>
+
+        <section class="container">
+            <h1>Fazer Cadastro</h1>
+            <form [formGroup]="usuarioForm" (ngSubmit)="onSubmit()" class="formulario">
+              <input type="text" name="nome" id="nome" placeholder="Nome" formControlName="nome" name>
+              <input type="email" name="email" id="email" placeholder="Email" formControlName="email"  email>
+              <input type="password" name="senha" id="senha" placeholder="Senha" formControlName="senha" password>
+              <button type="submit" [disabled]="!usuarioForm.valid" (click)="inserir()">Cadastrar</button>
+            </form>
+          </section>
+    </div>
+</div>

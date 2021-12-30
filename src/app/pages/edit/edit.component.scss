@@ -1,0 +1,118 @@
+$cor-principal: #7abcc7;
+$cor-secundaria: #fb8c8c;
+$cor-fundo: rgba(0, 0, 0, 0.816);
+
+.header {
+  width: 100vw;
+  height: 70px;
+  background: $cor-fundo;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    color: #fff;
+    font-size: 36px;
+
+    h1 {
+      font-weight: normal;
+      a {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 30px;
+      transition: 0.2s;
+    }
+    a:hover {
+      color: $cor-fundo;
+      transition: 0.2s;
+    }
+  }
+}
+
+.container-principal {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background: url("../../../assets/img/imagem-organic.jpg") center no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-cadastro {
+  width: 50vw;
+  height: calc(90vh - 70px);
+  background: rgba(255, 255, 255, 0.623);
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .imagem {
+    background: url("../../../assets/img/imagem-login.jpg") center no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+  }
+
+  .container {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 3em;
+    }
+
+    input {
+      margin-bottom: 30px;
+      width: 20vw;
+      height: 6vh;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 1.2em;
+      border: none;
+    }
+    button {
+      width: 14vw;
+      height: 5vh;
+      border-radius: 20px;
+      border: none;
+      font-size: 1.5em;
+      background: rgba(0, 0, 0, 0.583);
+      box-shadow: rgba(0, 0, 0, 0.809) 0px 15px 15px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-bottom: 20px;
+    }
+    button:hover {
+      background: #000;
+      transition: 0.2s;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.8em;
+
+      a {
+        color: blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
